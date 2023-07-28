@@ -8,8 +8,8 @@ When the word appears on the screen, you need to enter it in the field below and
 If the word is correct, you will get 20 points, otherwise you will be informed of the error, and you can continue to guess the word   
 
 In total, you'll solve 10 words, after which the game will end, and you will see the number of your points.  
-:exclamation: If you don't know the word, you can skip it by clicking "Skip". 
-After that, you will see a window with the original word (of course you'll get no points)
+:exclamation: ```If you don't know the word, you can skip it by clicking "Skip". 
+After that, you will see a window with the original word (of course you'll get no points)```
 
 
 
