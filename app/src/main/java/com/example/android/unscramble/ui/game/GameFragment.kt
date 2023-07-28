@@ -88,12 +88,6 @@ class GameFragment : Fragment() {
             showFinalScoreDialog()
     }
 
-    private fun getNextScrambledWord(): String {
-        val tempWord = allWordsList.random().toCharArray()
-        tempWord.shuffle()
-        return String(tempWord)
-    }
-
     private fun restartGame() {
         viewModel.reinitializeData()
         setErrorTextField(false)
