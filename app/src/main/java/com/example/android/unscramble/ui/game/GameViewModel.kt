@@ -1,9 +1,11 @@
 package com.example.android.unscramble.ui.game
 
+import android.content.Context
 import android.text.Spannable
 import android.text.SpannableString
 import android.text.style.TtsSpan
 import android.util.Log
+import android.widget.Toast
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
@@ -64,13 +66,18 @@ class GameViewModel: ViewModel() {
         return false
     }
 
+    fun showToastWithCurrentWord(context: Context) {
+        Toast.makeText(context, currentWord, Toast.LENGTH_SHORT)
+            .show()
+    }
+
     private fun increaseScore() {
         _score.value = (_score.value)?.plus(SCORE_INCREASE)
     }
 
     private fun getNextWord() {
         do {
-            currentWord = allWordsList.random()
+            currentWord = allWordsList().random()
         } while (wordsList.contains(currentWord))
 
         val tempWord = currentWord.toCharArray()

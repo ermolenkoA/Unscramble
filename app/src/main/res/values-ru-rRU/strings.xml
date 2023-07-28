@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unscramble</string>
+    <string name="instructions">Расшифруй слово используя все буквы.</string>
+    <string name="skip">Дальше</string>
+    <string name="submit">Принять</string>
+    <string name="score">Счёт: %d</string>
+    <string name="word_count">%d из %d слов</string>
+    <string name="enter_your_word">Введите слово</string>
+    <string name="congratulations">Поздравляем!</string>
+    <string name="you_scored">Ваш счет: %d</string>
+    <string name="exit">Выйти</string>
+    <string name="play_again">Ещё раз</string>
+    <string name="try_again">Попробуй еще!</string>
+</resources>
